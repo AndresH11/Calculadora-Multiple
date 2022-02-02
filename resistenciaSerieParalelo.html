@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de resistencia en serie y paralelo</title>
+    <link rel="stylesheet" href="css/smarponeSerieParalelo.css">
+    <link rel="stylesheet" href="css/tabletSerieParalelo.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="css/labtopSerieParalelo.css" media="(min-width: 1024px)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inconsolata:wght@700&family=Inter:wght@300;500&family=Montserrat:wght@100;500&family=Open+Sans:wght@300;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="javascript/resistenciaSerieParalelo.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor-main-header">
+            <div class="contenedor-icono-menu">
+                <label for="activacion-menu">
+                    <img src="recurso/menu.svg" alt="botón para abrir el menú">
+                </label>
+            </div>
+            <div class="contenedor-titulo"><p>Calculadora multimple</p></div>
+        </div>
+    </header>
+    <input type="checkbox" id="activacion-menu">
+    <div class="contenedor-principal-menu">
+        <div class="contenedor-menu">
+            <nav>
+                <a href="index.html">Calculadora de valor de resistencia</a>
+                <a href="#">Calculadora de resistencia en serie y paralelo</a>
+                <a href="#">Calculadora de capacitor en serie y paralelo</a>
+                <a href="#">Calculadora de resistencia para un led en serie</a>
+            </nav>
+            <label for="activacion-menu">
+                <img src="recurso/x.svg" alt="boton para cerrar el menú" class="icono-x">
+            </label>
+        </div>
+    </div>
+    <main>
+        <section class="contenedor-teoria">
+            <div class="margen">
+                <p class="titulo-seccion">¿cómo calcular la resistencia equivalente en serie?</p>
+                <p class="teoria">Para hallar el valor de la resistencia equivalente conformada por varios resistores en serie solo debe realizar la suma de todos los resistores que conformen la rama en serie.</p>
+                <div class="imagen">
+                </div>
+                <h2 class="formula">RE = R1 + R2 + R3</h2>
+                <p class="titulo-seccion">¿cómo calcular la resistencia equivalente en paralelo?</p>
+                <div class="formula2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYf59hOCBMzbGuNN2aZh4dJP-CqcPfGq3bNg&usqp=CAU" alt="formula">
+                </div>
+                <P class="teoria">Para caclular el valor de la resistencia equivalente formada por un conjunto de resistores en pararalo debemos aplicar la siguiete formula</P>
+                <div class="formula2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqh0nIFHNU8avC4xSQ6XUrQReM6dX_DCUIg&usqp=CAU" alt="formula">
+                </div>
+                <p class="teoria">El resitor equivalente en paralelo se define como el inverso de la suma de los inversos.</p>
+            </div>
+        </section>
+        <section class="contenedor-calculadora">
+            <div class="contenedor-titulo-calculadora">
+                <P>Calculadora de resistencia equivalente</P>
+            </div>
+            <div class="seccion-calculadora">
+                <form action="" class="contenedorCalculo">
+                    <div class="selectBox">
+                        <div class="select" id="select5"> <!--Este bloque va cambiando-->
+                            <div class="contenido-select">
+                                <h1 class="titulo">Selecciona una opción</h1>
+                                <p class="descripcion">Selecciona una opción.</p>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="opciones" id="opciones5">
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYP_inTIOuzLGnBxZ9vcUFsay7c5P6A_ygw&usqp=CAU" alt="color negro">
+                                    <div>
+                                     <h2 class="titulo">En serie</h2>
+                                     <p class="descripcion">S</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zgxc6cM18yx5FtccKMRXe43LjGNIODJ3rQ&usqp=CAU" alt="color negro">
+                                    <div>
+                                     <h2 class="titulo">En Paralelo</h2>
+                                     <p class="descripcion">P</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <input type = "hidden" name = "inputOpcion" id = "inputOpcion" value = "" />
+                    <div class="seccion-calculo">
+                        <p class = "guia">ingrese los valores de la resistencias separados por una coma ","</p>
+                        <div class="input-valores">
+                            <input type="text" placeholder="   100, 2000, 500000, 320" class="entrada" id="inputSerieParalelo">
+                        </div>
+                    </div>
+                </form>
+                <div class="contenedor-boton">
+                    <button class = "boton-calcular" type="button" id = "botonCalcular">Calcular</button>
+                </div>
+            </div>
+            <div class = "contenedorResultado" id = "contenedorResultado">
+                <p class = "respuestaDelCalculo">El valor de la resistencia es: <br></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-creditos">
+            <div class="contenedor-sitiosWeb">
+                <ul>
+                    <li class="titulo-credito">Sitios web</li>
+                    <li class="links"><a href="https://github.com/AndresH11">@GutHub</a></li>
+                    <li class="links"><a href="https://www.facebook.com/andresfelipe.hernandezaldana">@Facebook</a></li>
+                    <li class="links"><a href="https://www.linkedin.com/in/andrés-hernández-aldana-a8b008149">@Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-creador">
+                <ul>
+                    <li class="titulo-credito">Creado por:</li>
+                    <li class="titulo-credito">Andrés Hernández</li>
+                </ul>
+            </div>
+            <div class="contenedor-copyright">
+                <div class="icono-copyright">
+                    <img src="recurso/copyright.svg" alt="">
+                </div>
+                <p>Copyright Andrés Felipe Hernández Aldana</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

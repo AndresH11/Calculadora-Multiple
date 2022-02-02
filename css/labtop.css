@@ -1,0 +1,17 @@
+main{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-teoria{
+    width: 80%;
+    max-width: 66.8rem;
+    margin-bottom: 0%;
+}
+.contenedor-calculadora{
+    width: 80%;
+    max-width: 66.8rem;
+}
+.contenedor-menu nav a {
+    font-size: 2.5rem;
+}
