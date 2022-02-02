@@ -1,0 +1,2 @@
+# Calculadora_Multiple
+Es una pagina que será creada con la finalidad de ayudar a las personas facilitando el calculo del valor de una resistencia por medio de las bandas de colores, la resistencia total equivalente en serie y en paralelo, al igual que para los capacitores (también llamado condensadores) en serie y paralelo, el calculo de una resistencia para un led en serie. Se tiene pensado ir agregando mas funciones en el futuro.
