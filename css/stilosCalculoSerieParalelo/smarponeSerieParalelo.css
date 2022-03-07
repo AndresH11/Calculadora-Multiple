@@ -20,120 +20,49 @@ ul{
 }
 /*FIN DE ESTILOS PRINCIPALES*/
 
-/*HEADER*/
+/*COMIENZO DE ESTILOS PARA HEADER*/
 
 header{
-    height: 13.8rem;
-    min-width: 27.4rem;
-    background-color: #000;
-}
-
-.contenedor-main-header{
-    height: 100%;
-    display: flex;
-}
-
-.contenedor-icono-menu{
-    margin-top: 2.5rem;
-    margin-left: 1rem;
-}
-
-.contenedor-icono-menu img{
-    cursor: pointer;
-}
-
-.contenedor-titulo{
     width: 100%;
-    color: #f8f8f8;
-    margin-top: 3.2rem;
-    margin-left: 2rem;
+    height: 100px;
+    margin-bottom: 2rem;
+    background-color: #010036;;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
-.contenedor-titulo p{
-    font-size: 2rem;
-    line-height: 2.7rem;
+
+header h1{
+    font-size: 2.8rem;
+    letter-spacing: 1px;
     font-weight: bold;
-    letter-spacing: 0.6rem;
+    color: wheat;
 }
 
-/*MENÚ DESPLEGABLE*/
-
-#activacion-menu{
-    display: none;
-}
-
-.contenedor-principal-menu{
-    position: absolute;
-    top: 0;
-    left: 0;
+header nav{
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
-    z-index: 400;
-    transition: all .5s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-#activacion-menu:checked + .contenedor-principal-menu{
-    transition: all .5s ease;
-    opacity: 1;
-    visibility: visible;
-}
-.contenedor-menu{
-    width: 100%;
-    max-width: 50rem;
     height: 100%;
-    position: relative;
-    transition: all .5s ease;
-    transform: translateX(-100%);
+    background-color: #002064;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#activacion-menu:checked + .contenedor-principal-menu .contenedor-menu{
-    transform: translateX(0%);
-    transition: all .5s ease;
+header p{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.contenedor-menu nav{
-    transform: translateY(15%);
+/*FIN DE ESTILOS PARA EL HEADER*/
+
+body{
+    background-image: linear-gradient(to right top, #002064,#001e67,#001d6a,#001a6d,#001870,#00197c,#001a89,#001a95,#001faf,#0024c9,#0028e4,#002dff);
 }
 
-.contenedor-menu nav a{
-    font-size: 1.3rem;
-    display: block;
-    padding: 2rem;
-    color: #c7c7c7;
-    border-left: 0.5rem solid transparent;
-    transition: all .4s ease;
-}
-
-.contenedor-menu nav a:hover{
-    background-color: #2c2c2c;
-    border-left: 0.5rem solid #c7c7c7;
-    transition: all .4s ease;
-}
-
-.contenedor-menu .icono-x{
-    position: absolute;
-    top: 0.2rem;
-    right: 0rem;
-    cursor: pointer;
-}
-.contenedor-menu .icono-x:hover{
-    background-color: #1f1f1f;
-    border: 1px solid #1f1f0f;
-    transition: all .3s ease;
-}
-
-/*FIN DE LOS ESTILOS PARA EL MENÚ DESPLEGAGBLE*/
-
-/*FIN DE LOS ESTILOS PARA EL HEADER*/
-
-/*COMIENZO DE ESTILOS PARA EL MAIN*/
-main{
-    background-color:#D7D7D7;
-    padding-top: 0.7rem;
-    padding-bottom: 1.6rem;
-}
  /*COMIENZO SECCION TEORIA*/
+
 .contenedor-teoria{
     width: 93.8%;
     max-width: 76.8rem;
@@ -141,7 +70,7 @@ main{
     padding-top: 2.69rem;
     margin-bottom: 3.8rem;
     letter-spacing: 0.1rem;
-    background: #F6F4F4;
+    background: rgb(246 244 244 / 60%);
     border-radius: 0.5rem;
 }
 
@@ -213,7 +142,7 @@ main{
     max-width: 76.8rem;
     margin: 0 auto;
     padding-top: 1.3rem;
-    background: #ff7600;
+    background: rgb(39 255 0 / 44%);
     border-radius: 0.5rem;
 }
 
@@ -431,12 +360,13 @@ main{
 
 footer{
     width: 100%;
-
     height: 25.9rem;
+    margin-top: 2rem;
+    border-top: 3rem solid #002064;
 }
 
 .contenedor-creditos{
-    background: #000000;
+    background: #010036;
     display: grid;
     grid-template-rows: 20rem 5.9rem;
     grid-template-areas: 
