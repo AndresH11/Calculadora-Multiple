@@ -1,0 +1,56 @@
+.contenedor-titulo p{
+    font-size: 3rem;
+}
+
+.margen .titulo-seccion{
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+
+.margen .teoria{
+
+    font-size: 1.9rem;
+}
+
+.contenedor-titulo-calculadora p{
+    font-size: 2.8rem;
+}
+
+.respuestaDelCalculo{
+    font-size: 2.5rem;
+
+}
+
+.contenedor-creditos .titulo-credito{
+    font-size: 2rem;
+}
+
+.contenedor-sitiosWeb .links{
+    font-size: 1.7rem;
+}
+
+.contenedor-copyright p{
+    width: 57%;
+    font-size: 2rem;
+}
+
+.icono-copyright{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contenedor-creditos{
+    grid-template-rows: 20rem 10rem;
+}
+
+.icono-copyright{
+    left: calc(50% - 19rem);
+}
+
+.contenedor-copyright p {
+    left: calc(50% - 17rem);
+}
+
+.contenedor-menu{
+    background-color: rgb(28, 28, 28);
+}

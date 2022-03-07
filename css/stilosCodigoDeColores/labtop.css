@@ -1,0 +1,29 @@
+main{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-teoria{
+    width: 80%;
+    max-width: 66.8rem;
+    margin-bottom: 0%;
+}
+
+.contenedor-calculadora{
+    width: 80%;
+    max-width: 66.8rem;
+    margin-top: 2rem;
+}
+
+.contenedor-menu nav a {
+    font-size: 2.5rem;
+}
+
+.boton-calcular{
+    box-shadow: none;
+}
+
+.boton-calcular:hover{
+    box-shadow: 2px 3px 10px rgba(9, 9, 9, 0.8);
+    cursor: pointer;
+}
