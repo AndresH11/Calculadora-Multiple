@@ -215,7 +215,7 @@ footer{
     border-top: 3rem solid #002064;
 }
 .contenedor-creditos{
-    background: #010036;;
+    background: #010036;
     display: grid;
     grid-template-rows: 20rem 5.9rem;
     grid-template-areas: 
