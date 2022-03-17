@@ -343,6 +343,153 @@ body{
 
 /*FIN DE LOS ESTILOS PARA EL MAIN*/
 
+/*COMIENZO DE LOS ESTILOS PARA LAS CARDS*/
+
+.container-cards{
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    justify-content:center;
+    grid-template-columns: repeat(auto-fill,minmax(25rem,30rem));
+    border-top: 1px solid white;
+    margin-top: 2rem;
+    padding-top:2rem;
+}
+
+.container-cards .card{
+    min-width: 25rem;
+    height: 12.5rem;
+    border-radius: 1rem;
+    font-family: 'Roboto',sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.container-cards .card h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 21px;
+    color: white;
+    margin-left: 2.1rem;
+    margin-top: 1rem;
+}
+
+.container-cards .card p{
+    font-size: 1rem;
+    line-height: 12px;
+    color: white;
+    grid-column: 1;
+    margin-left: 2.1rem;
+}
+
+.container-cards .card figure{
+    width: 9.6rem;
+    height: 9.6rem;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    position: relative;
+}
+
+.container-cards .card1{
+    background-color: #318CE7;
+}
+
+.container-cards .card2{
+    background-color: #31E743;
+}
+
+.container-cards .card3{
+    background-color: #E80404;
+}
+
+.container-cards .card4{
+    background-color: #282626;
+}
+
+
+/*DANDO POSICION A LAS RESISTENCIAS DE LA CARD 2*/
+
+.container-cards .card2 span{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+}
+
+.container-cards .card2 .Resistencia1{
+    top: 50px;
+    background-image: url("/recurso/resistenciaAmariloAzul.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-cards .card2 .Resistencia2{
+    top: 20px;
+    left: 50px;
+    background-image: url("/recurso/resistenciaVioletaVerde.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+.container-cards .card2 .Resistencia3{
+    top: -10px;
+    background-image: url("/recurso/reisitenciaAzulGris.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(150deg);
+}
+
+/*FIN DE LOS ESTILOS DE POSICIONAMIENTO DE RESISTENCIA DE LA CARD 2*/
+
+/*DANDO POSICION A LLOS CONDENSADORESS DE LA CARD 3*/
+
+.container-cards .card3 span{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+}
+
+.container-cards .card3 .Condensador1{
+    top: 50px;
+    background-image: url("/recurso/condensadorAmarillo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-50deg);
+}
+
+.container-cards .card3 .Condensador2{
+    top: 20px;
+    left: 50px;
+    background-image: url("/recurso/condensadorAzul.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(268deg);
+}
+
+.container-cards .card3 .Condensador3{
+    top: -10px;
+    background-image: url("/recurso/condensadorAzulOscuro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-124deg);
+}
+
+/*FIN DE LOS ESTILOS DE POSICIONAMIENTO DEL CONDENSADOR DE LA CARD 3*/
+
+.container-cards .card4 img{
+    width: 100%;
+}
+
+/*FIN DE LOS ESTILOS PARA LAS CARDS*/
+
 /*COMIENZO DE LOS ESTILOS PARA EL FOOTER*/
 
 footer{

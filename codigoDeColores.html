@@ -26,426 +26,473 @@
     <!--MAIN-->
     
     <main>
+        <div class="main-container">
 
-        <!--TEORIA-->
-        
-        <section class="contenedor-teoria">
-            <div class="margen">
-                <p class="titulo-seccion">¿cómo se calcula el valor de una resistencia?</p>
-                <p class="teoria">En canso de disponer de una resistencia de cuatro bandas de colores lo primero que debes aprender es que las dos primeras bandas de colores representa el numero entero de la resistencia</p>
-                <div class="imagen">
+            <!--TEORIA-->
+
+            <section class="contenedor-teoria">
+                <div class="margen">
+                    <p class="titulo-seccion">¿cómo se calcula el valor de una resistencia?</p>
+                    <p class="teoria">En canso de disponer de una resistencia de cuatro bandas de colores lo primero que debes aprender es que las dos primeras bandas de colores representa el numero entero de la resistencia</p>
+                    <div class="imagen">
+                    </div>
+                    <p class="teoria">la tercera banda representa el multiplicador por el cual hay que multiplicar con el valor obtenido de las dos primeras bandas de colores. <br><br>y por ultimo tenemos la cuarta banda que representa el margen de error o tambien llamado tolerancia.</p>
                 </div>
-                <p class="teoria">la tercera banda representa el multiplicador por el cual hay que multiplicar con el valor obtenido de las dos primeras bandas de colores. <br><br>y por ultimo tenemos la cuarta banda que representa el margen de error o tambien llamado tolerancia.</p>
-            </div>
-        </section>
-        <section class="contenedor-calculadora">
-            <div class="contenedor-titulo-calculadora">
-                <P>Calculadora  de valor de resistencia</P>
-            </div>
-
+            </section>
+    
             <!--SECCION CALCULADORA, VAMOS A GENERAR LOS SELECTORES-->
-
-            <div class="seccion-calculadora">
-                <form action="">
-                    <div class="selectBox"> <!--PRIMER SELECTOR DE COLORES-->
-                        <div class="select" id="select"> <!--Este bloque va cambiando-->
-                            <div class="contenido-select">
-                                <h1 class="titulo">Selecciona un color</h1>
-                                <p class="descripcion">primera Banda de color.</p>
-                            </div>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                        <div class="opciones" id="opciones">
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATwAAACfCAMAAABTJJXAAAAAG1BMVEUAAADExMSHh4fAwMDHx8c0NDSPj4+CgoIsLCxfIEQgAAABd0lEQVR4nO3QwQ2DMADAQEJaYP+JS1eIHwjpbgLL2xysmXMbx86K8573uTaWjHve9+mItzIvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC/4z7uejnire944dlacc25zsGbOH4WTD26ZBUoVAAAAAElFTkSuQmCC" alt="color negro">
-                                    <div>
-                                        <h2 class="titulo">Negro</h2>
-                                        <p class="descripcion">0</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                 <div class="contenido-opcion">
-                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
-                                     <div>
-                                         <h2 class="titulo">Marrón</h2>
-                                         <p class="descripcion">1</p>
-                                     </div>
-                                 </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
-                                    <div>
-                                        <h2 class="titulo">Rojo</h2>
-                                        <p class="descripcion">2</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX/igDYjnn2AAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsXsAAEee23DAAAAAElFTkSuQmCC" alt="color naranja">
-                                    <div>
-                                        <h2 class="titulo">Naranja</h2>
-                                        <p class="descripcion">3</p>
-                                    </div>
-                                </div>
-                            </a>
-                             <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAACVBMVEX38gD78AD+8wPiGVA9AAABc0lEQVR4nO3QsQnAQAzAQDv7D50qdVD1PNxNIDTDr919Tjdcw6zArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzgm/UCEhkDSYELrmQAAAAASUVORK5CYII=" alt="color amarillo">
-                                    <div>
-                                        <h2 class="titulo">Amarillo</h2>
-                                        <p class="descripcion">4</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color marrón">
-                                    <div>
-                                        <h2 class="titulo">Verder</h2>
-                                        <p class="descripcion">5</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color azul">
-                                    <div>
-                                        <h2 class="titulo">Azul</h2>
-                                        <p class="descripcion">6</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
-                                    <div>
-                                        <h2 class="titulo">Violeta</h2>
-                                        <p class="descripcion">7</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
-                                    <div>
-                                        <h2 class="titulo">Gris</h2>
-                                        <p class="descripcion">8</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_nl75PvBOvCcI2Uo05OQE7t--PS4QxKiyQ&usqp=CAU" alt="color Blanco">
-                                    <div>
-                                        <h2 class="titulo">Blanco</h2>
-                                        <p class="descripcion">9</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <input type = "hidden" name = "color1" id = "inputColor1" value = "" />
-                    </div>
-                    <div class="selectBox"> <!--SEGUNDO SELECTOR DE COLORES-->
-                        <div class="select" id="select2"> <!--Este bloque va cambiando-->
-                            <div class="contenido-select">
-                                <h1 class="titulo">Selecciona un color</h1>
-                                <p class="descripcion">Segunda Banda de color.</p>
-                            </div>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                        <div class="opciones" id="opciones2">
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATwAAACfCAMAAABTJJXAAAAAG1BMVEUAAADExMSHh4fAwMDHx8c0NDSPj4+CgoIsLCxfIEQgAAABd0lEQVR4nO3QwQ2DMADAQEJaYP+JS1eIHwjpbgLL2xysmXMbx86K8573uTaWjHve9+mItzIvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC/4z7uejnire944dlacc25zsGbOH4WTD26ZBUoVAAAAAElFTkSuQmCC" alt="color negro">
-                                    <div>
-                                        <h2 class="titulo">Negro</h2>
-                                        <p class="descripcion">0</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
-                                    <div>
-                                        <h2 class="titulo">Marrón</h2>
-                                        <p class="descripcion">1</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
-                                    <div>
-                                        <h2 class="titulo">Rojo</h2>
-                                        <p class="descripcion">2</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX/igDYjnn2AAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsXsAAEee23DAAAAAElFTkSuQmCC" alt="color naranja">
-                                    <div>
-                                        <h2 class="titulo">Naranja</h2>
-                                        <p class="descripcion">3</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAACVBMVEX38gD78AD+8wPiGVA9AAABc0lEQVR4nO3QsQnAQAzAQDv7D50qdVD1PNxNIDTDr919Tjdcw6zArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzgm/UCEhkDSYELrmQAAAAASUVORK5CYII=" alt="color amarillo">
-                                    <div>
-                                        <h2 class="titulo">Amarillo</h2>
-                                        <p class="descripcion">4</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color verde">
-                                    <div>
-                                        <h2 class="titulo">Verde</h2>
-                                        <p class="descripcion">5</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color Azul">
-                                    <div>
-                                        <h2 class="titulo">Azul</h2>
-                                        <p class="descripcion">6</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
-                                    <div>
-                                        <h2 class="titulo">Violeta</h2>
-                                        <p class="descripcion">7</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
-                                    <div>
-                                        <h2 class="titulo">Gris</h2>
-                                        <p class="descripcion">8</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_nl75PvBOvCcI2Uo05OQE7t--PS4QxKiyQ&usqp=CAU" alt="color Blanco">
-                                    <div>
-                                        <h2 class="titulo">Blanco</h2>
-                                        <p class="descripcion">9</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <input type = "hidden" name = "color2" id = "inputColor2" value = "" />
-                    <div class="selectBox"> <!--TERCER SELECTOR DE COLORES-->
-                        <div class="select" id="select3"> <!--Este bloque va cambiando-->
-                            <div class="contenido-select">
-                                <h1 class="titulo">Selecciona un color</h1>
-                                <p class="descripcion">Banda multiplicadora.</p>
-                            </div>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                        <div class="opciones" id="opciones3">
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATwAAACfCAMAAABTJJXAAAAAG1BMVEUAAADExMSHh4fAwMDHx8c0NDSPj4+CgoIsLCxfIEQgAAABd0lEQVR4nO3QwQ2DMADAQEJaYP+JS1eIHwjpbgLL2xysmXMbx86K8573uTaWjHve9+mItzIvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC/4z7uejnire944dlacc25zsGbOH4WTD26ZBUoVAAAAAElFTkSuQmCC" alt="color negro">
-                                    <div>
-                                        <h2 class="titulo">Negro</h2>
-                                        <p class="descripcion">1</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
-                                    <div>
-                                        <h2 class="titulo">Marrón</h2>
-                                        <p class="descripcion">10</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
-                                    <div>
-                                        <h2 class="titulo">Rojo</h2>
-                                        <p class="descripcion">100</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX/igDYjnn2AAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsXsAAEee23DAAAAAElFTkSuQmCC" alt="color naranja">
-                                    <div>
-                                        <h2 class="titulo">Naranja</h2>
-                                        <p class="descripcion">1000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAACVBMVEX38gD78AD+8wPiGVA9AAABc0lEQVR4nO3QsQnAQAzAQDv7D50qdVD1PNxNIDTDr919Tjdcw6zArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzgm/UCEhkDSYELrmQAAAAASUVORK5CYII=" alt="color amarillo">
-                                    <div>
-                                        <h2 class="titulo">Amarillo</h2>
-                                        <p class="descripcion">10000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color verde">
-                                    <div>
-                                        <h2 class="titulo">Verde</h2>
-                                        <p class="descripcion">100000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color Azul">
-                                    <div>
-                                        <h2 class="titulo">Azul</h2>
-                                        <p class="descripcion">1000000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
-                                    <div>
-                                        <h2 class="titulo">Violeta</h2>
-                                        <p class="descripcion">10000000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
-                                    <div>
-                                        <h2 class="titulo">Gris</h2>
-                                        <p class="descripcion">100000000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_nl75PvBOvCcI2Uo05OQE7t--PS4QxKiyQ&usqp=CAU" alt="color Blanco">
-                                    <div>
-                                        <h2 class="titulo">Blanco</h2>
-                                        <p class="descripcion">1000000000</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <input type = "hidden" name = "color3" id = "inputColor3" value = "" />
-                    <div class="selectBox"> <!--CUARTO SELECTOR DE COLORES-->
-                        <div class="select" id="select4"> <!--Este bloque va cambiando-->
-                            <div class="contenido-select">
-                                <h1 class="titulo">Selecciona un color</h1>
-                                <p class="descripcion">Banda de tolerancia.</p>
-                            </div>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                        <div class="opciones" id="opciones4">
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
-                                    <div>
-                                        <h2 class="titulo">Marrón</h2>
-                                        <p class="descripcion">1</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
-                                    <div>
-                                        <h2 class="titulo">Rojo</h2>
-                                        <p class="descripcion">2</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color verde">
-                                    <div>
-                                        <h2 class="titulo">Verde</h2>
-                                        <p class="descripcion">0.5</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color Azul">
-                                    <div>
-                                        <h2 class="titulo">Azul</h2>
-                                        <p class="descripcion">0.25</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
-                                    <div>
-                                        <h2 class="titulo">Violeta</h2>
-                                        <p class="descripcion">0.1</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
-                                    <div>
-                                        <h2 class="titulo">Gris</h2>
-                                        <p class="descripcion">0.05</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/jpeg;base64,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" alt="color Oro">
-                                    <div>
-                                        <h2 class="titulo">Oro</h2>
-                                        <p class="descripcion">5</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="data:image/jpeg;base64,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" alt="color Plata">
-                                    <div>
-                                        <h2 class="titulo">Plata</h2>
-                                        <p class="descripcion">10</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <input type = "hidden" name = "color4" id = "inputColor4" value = "" />
-                </form>
-                <div class="contenedor-boton">
-                    <button class = "boton-calcular" type="button" id = "botonCalcular">Calcular</button>
+    
+            <section class="contenedor-calculadora">
+                <div class="contenedor-titulo-calculadora">
+                    <P>Calculadora  de valor de resistencia</P>
                 </div>
-            </div>
-            <div class = "contenedorResultado" id = "contenedorResultado">
-                <p class = "respuestaDelCalculo">El valor de la resistencia es: <br></p>
-            </div>
-        </section>
+                <div class="seccion-calculadora">
+                    <form action="">
+                        <div class="selectBox"> <!--PRIMER SELECTOR DE COLORES-->
+                            <div class="select" id="select"> <!--Este bloque va cambiando-->
+                                <div class="contenido-select">
+                                    <h1 class="titulo">Selecciona un color</h1>
+                                    <p class="descripcion">primera Banda de color.</p>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="opciones" id="opciones">
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATwAAACfCAMAAABTJJXAAAAAG1BMVEUAAADExMSHh4fAwMDHx8c0NDSPj4+CgoIsLCxfIEQgAAABd0lEQVR4nO3QwQ2DMADAQEJaYP+JS1eIHwjpbgLL2xysmXMbx86K8573uTaWjHve9+mItzIvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC/4z7uejnire944dlacc25zsGbOH4WTD26ZBUoVAAAAAElFTkSuQmCC" alt="color negro">
+                                        <div>
+                                            <h2 class="titulo">Negro</h2>
+                                            <p class="descripcion">0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                     <div class="contenido-opcion">
+                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
+                                         <div>
+                                             <h2 class="titulo">Marrón</h2>
+                                             <p class="descripcion">1</p>
+                                         </div>
+                                     </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
+                                        <div>
+                                            <h2 class="titulo">Rojo</h2>
+                                            <p class="descripcion">2</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX/igDYjnn2AAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsXsAAEee23DAAAAAElFTkSuQmCC" alt="color naranja">
+                                        <div>
+                                            <h2 class="titulo">Naranja</h2>
+                                            <p class="descripcion">3</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                 <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAACVBMVEX38gD78AD+8wPiGVA9AAABc0lEQVR4nO3QsQnAQAzAQDv7D50qdVD1PNxNIDTDr919Tjdcw6zArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzgm/UCEhkDSYELrmQAAAAASUVORK5CYII=" alt="color amarillo">
+                                        <div>
+                                            <h2 class="titulo">Amarillo</h2>
+                                            <p class="descripcion">4</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color marrón">
+                                        <div>
+                                            <h2 class="titulo">Verder</h2>
+                                            <p class="descripcion">5</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color azul">
+                                        <div>
+                                            <h2 class="titulo">Azul</h2>
+                                            <p class="descripcion">6</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
+                                        <div>
+                                            <h2 class="titulo">Violeta</h2>
+                                            <p class="descripcion">7</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
+                                        <div>
+                                            <h2 class="titulo">Gris</h2>
+                                            <p class="descripcion">8</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_nl75PvBOvCcI2Uo05OQE7t--PS4QxKiyQ&usqp=CAU" alt="color Blanco">
+                                        <div>
+                                            <h2 class="titulo">Blanco</h2>
+                                            <p class="descripcion">9</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <input type = "hidden" name = "color1" id = "inputColor1" value = "" />
+                        </div>
+                        <div class="selectBox"> <!--SEGUNDO SELECTOR DE COLORES-->
+                            <div class="select" id="select2"> <!--Este bloque va cambiando-->
+                                <div class="contenido-select">
+                                    <h1 class="titulo">Selecciona un color</h1>
+                                    <p class="descripcion">Segunda Banda de color.</p>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="opciones" id="opciones2">
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATwAAACfCAMAAABTJJXAAAAAG1BMVEUAAADExMSHh4fAwMDHx8c0NDSPj4+CgoIsLCxfIEQgAAABd0lEQVR4nO3QwQ2DMADAQEJaYP+JS1eIHwjpbgLL2xysmXMbx86K8573uTaWjHve9+mItzIvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC/4z7uejnire944dlacc25zsGbOH4WTD26ZBUoVAAAAAElFTkSuQmCC" alt="color negro">
+                                        <div>
+                                            <h2 class="titulo">Negro</h2>
+                                            <p class="descripcion">0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
+                                        <div>
+                                            <h2 class="titulo">Marrón</h2>
+                                            <p class="descripcion">1</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
+                                        <div>
+                                            <h2 class="titulo">Rojo</h2>
+                                            <p class="descripcion">2</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX/igDYjnn2AAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsXsAAEee23DAAAAAElFTkSuQmCC" alt="color naranja">
+                                        <div>
+                                            <h2 class="titulo">Naranja</h2>
+                                            <p class="descripcion">3</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAACVBMVEX38gD78AD+8wPiGVA9AAABc0lEQVR4nO3QsQnAQAzAQDv7D50qdVD1PNxNIDTDr919Tjdcw6zArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzgm/UCEhkDSYELrmQAAAAASUVORK5CYII=" alt="color amarillo">
+                                        <div>
+                                            <h2 class="titulo">Amarillo</h2>
+                                            <p class="descripcion">4</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color verde">
+                                        <div>
+                                            <h2 class="titulo">Verde</h2>
+                                            <p class="descripcion">5</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color Azul">
+                                        <div>
+                                            <h2 class="titulo">Azul</h2>
+                                            <p class="descripcion">6</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
+                                        <div>
+                                            <h2 class="titulo">Violeta</h2>
+                                            <p class="descripcion">7</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
+                                        <div>
+                                            <h2 class="titulo">Gris</h2>
+                                            <p class="descripcion">8</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_nl75PvBOvCcI2Uo05OQE7t--PS4QxKiyQ&usqp=CAU" alt="color Blanco">
+                                        <div>
+                                            <h2 class="titulo">Blanco</h2>
+                                            <p class="descripcion">9</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <input type = "hidden" name = "color2" id = "inputColor2" value = "" />
+                        <div class="selectBox"> <!--TERCER SELECTOR DE COLORES-->
+                            <div class="select" id="select3"> <!--Este bloque va cambiando-->
+                                <div class="contenido-select">
+                                    <h1 class="titulo">Selecciona un color</h1>
+                                    <p class="descripcion">Banda multiplicadora.</p>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="opciones" id="opciones3">
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATwAAACfCAMAAABTJJXAAAAAG1BMVEUAAADExMSHh4fAwMDHx8c0NDSPj4+CgoIsLCxfIEQgAAABd0lEQVR4nO3QwQ2DMADAQEJaYP+JS1eIHwjpbgLL2xysmXMbx86K8573uTaWjHve9+mItzIvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC8wLzAvMC/4z7uejnire944dlacc25zsGbOH4WTD26ZBUoVAAAAAElFTkSuQmCC" alt="color negro">
+                                        <div>
+                                            <h2 class="titulo">Negro</h2>
+                                            <p class="descripcion">1</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
+                                        <div>
+                                            <h2 class="titulo">Marrón</h2>
+                                            <p class="descripcion">10</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
+                                        <div>
+                                            <h2 class="titulo">Rojo</h2>
+                                            <p class="descripcion">100</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX/igDYjnn2AAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsXsAAEee23DAAAAAElFTkSuQmCC" alt="color naranja">
+                                        <div>
+                                            <h2 class="titulo">Naranja</h2>
+                                            <p class="descripcion">1000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAACVBMVEX38gD78AD+8wPiGVA9AAABc0lEQVR4nO3QsQnAQAzAQDv7D50qdVD1PNxNIDTDr919Tjdcw6zArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzgm/UCEhkDSYELrmQAAAAASUVORK5CYII=" alt="color amarillo">
+                                        <div>
+                                            <h2 class="titulo">Amarillo</h2>
+                                            <p class="descripcion">10000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color verde">
+                                        <div>
+                                            <h2 class="titulo">Verde</h2>
+                                            <p class="descripcion">100000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color Azul">
+                                        <div>
+                                            <h2 class="titulo">Azul</h2>
+                                            <p class="descripcion">1000000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
+                                        <div>
+                                            <h2 class="titulo">Violeta</h2>
+                                            <p class="descripcion">10000000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
+                                        <div>
+                                            <h2 class="titulo">Gris</h2>
+                                            <p class="descripcion">100000000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_nl75PvBOvCcI2Uo05OQE7t--PS4QxKiyQ&usqp=CAU" alt="color Blanco">
+                                        <div>
+                                            <h2 class="titulo">Blanco</h2>
+                                            <p class="descripcion">1000000000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <input type = "hidden" name = "color3" id = "inputColor3" value = "" />
+                        <div class="selectBox"> <!--CUARTO SELECTOR DE COLORES-->
+                            <div class="select" id="select4"> <!--Este bloque va cambiando-->
+                                <div class="contenido-select">
+                                    <h1 class="titulo">Selecciona un color</h1>
+                                    <p class="descripcion">Banda de tolerancia.</p>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="opciones" id="opciones4">
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog8rOG49kCrgiDvnhVCbDMn_bX46b33bbTA&usqp=CAU" alt="color marrón">
+                                        <div>
+                                            <h2 class="titulo">Marrón</h2>
+                                            <p class="descripcion">1</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUooIDr0ZqaD0XfZllPK0sQ97fyETcpzlRw&usqp=CAU" alt="color rojo">
+                                        <div>
+                                            <h2 class="titulo">Rojo</h2>
+                                            <p class="descripcion">2</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUjsU1owme3AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="color verde">
+                                        <div>
+                                            <h2 class="titulo">Verde</h2>
+                                            <p class="descripcion">0.5</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAElBMVEVHR/9HR/1JSvxHSPxJSvtGRv8HXGjFAAABdElEQVR4nO3SsQ3DMBDAQMmv7L9yPEKKA2ID5ARXcF0zcz29uc66Zs/ju4lr9npDN3T+bfihz9rrvAG69tyP/hvxS0F1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXVBdUF1QXV7r/MO6Kxz7dv78NacL8bvDm1Mz0D5AAAAAElFTkSuQmCC" alt="color Azul">
+                                        <div>
+                                            <h2 class="titulo">Azul</h2>
+                                            <p class="descripcion">0.25</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWFAI89g3oAAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="color violeta">
+                                        <div>
+                                            <h2 class="titulo">Violeta</h2>
+                                            <p class="descripcion">0.1</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAG1BMVEV/f32AgH6Pj457fHiSkpB6eniAgXx+fn6Agnz7B27bAAABpElEQVR4nO3d626CQBAGULa16Ps/cdWmEwVcYGHxwjm/Cuxl9rNNDGkyzVfPoWvCkCljaixzWLGa5rvrp2/CmOcsc70o26k/pnlvacizi3oSUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUQRRBFEEUYQPimLpET40ivk+6oXesigeBPSeRj7gXUaxosLtNjtzQW2iEMXuo2gqpFG412YHXmStKEoTfCFrRZFdsvIZVlIhinclirCPKCZVvoso5h1SFKIQhShE8ewCAAAAADaQ2rJ5bZuZ2P55uGfKvntJ56mnU/7lzMBLp7E76XbPNFBA25b+i1vJrChkZO3xxQdG9KN4fDW0Qe7DBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpZ0iTx7LhOFUBetg9qunZ2XfjHPKGC0TH3Nd41LI3Zcbe0n2m2y22zSRLjO3QGDEZxvNxte4/nVJKt49Kyt34U42O6U24v0s0Pqfd4ViX5p9Wb507ZoTMkDT6Lu8VtoPNP67cRnrJDylxW/qX9d9wgio2Osthr1ukLJgAAwAf5BZW+ESWsGknFAAAAAElFTkSuQmCC" alt="color Gris">
+                                        <div>
+                                            <h2 class="titulo">Gris</h2>
+                                            <p class="descripcion">0.05</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/jpeg;base64,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" alt="color Oro">
+                                        <div>
+                                            <h2 class="titulo">Oro</h2>
+                                            <p class="descripcion">5</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="data:image/jpeg;base64,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" alt="color Plata">
+                                        <div>
+                                            <h2 class="titulo">Plata</h2>
+                                            <p class="descripcion">10</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <input type = "hidden" name = "color4" id = "inputColor4" value = "" />
+                    </form>
+                    <div class="contenedor-boton">
+                        <button class = "boton-calcular" type="button" id = "botonCalcular">Calcular</button>
+                    </div>
+                </div>
+                <div class = "contenedorResultado" id = "contenedorResultado">
+                    <p class = "respuestaDelCalculo">El valor de la resistencia es: <br></p>
+                </div>
+            </section>
+        </div>
+
+            <!--SECCION CARDS-->
+        <div class="main-container-cards">
+            <section class="container-cards">
+                <a href="/codigoDeColores.html">
+                    <div class="card card1">
+                        <h2>Calculadora codigo de colores</h2>
+                        <p>Calcula el valor de la resistencia por medio del codigo de colores.</p>
+                        <figure>
+                            <img src="/recurso/icono-resistencia1.png" alt="Imagen de una resistencia">
+                        </figure>
+                    </div>
+                </a>
+                <a href="/resistenciaSerieParalelo.html">
+                    <div class="card card2">
+                        <h2>Calculadora resistencia equivalente</h2>
+                        <p>Calcula la resistencia equivalente en serie o en paralelo.</p>
+                        <figure>
+                            <span class="Resistencia1"></span>
+                            <span class="Resistencia2"></span>
+                            <span class="Resistencia3"></span>
+                        </figure>
+                    </div>
+                </a>
+                <a href="/capacitoresSerieParalelo.html">
+                    <div class="card card3">
+                        <h2>Calculadora condensador equivalente</h2>
+                        <p>Calcula el condensandor equivalente en serie o en paralelo.</p>
+                        <figure>
+                            <span class="Condensador1"></span>
+                            <span class="Condensador2"></span>
+                            <span class="Condensador3"></span>
+                        </figure>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card card4">
+                        <h2>Calculadora resistencia para un led</h2>
+                        <p>Calcula la resistencia apropiada para un diodo led en serie.</p>
+                        <figure>
+                            <img src="/recurso/icons8-led-64.png" alt="Imagen de una resistencia">
+                        </figure>
+                    </div>
+                </a>
+            </section>
     </main>
 
     <!--COMIENZO DEL FOOTER-->

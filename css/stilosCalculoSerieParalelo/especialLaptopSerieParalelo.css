@@ -1,0 +1,22 @@
+
+.main-container{
+    display: grid;
+    grid-template-columns: 72rem 72rem;
+    grid-template-rows: 70rem 70rem;
+}
+.contenedor-calculadora{
+    height: 90%;
+}
+.main-container-cards{
+    display: block;
+    margin-top: 0;
+    grid-column: 2;
+}
+
+.contenedor-teoria{
+    grid-row: 1 / 3;
+}
+.container-cards{
+    min-width: 61rem;
+    padding: none;
+}

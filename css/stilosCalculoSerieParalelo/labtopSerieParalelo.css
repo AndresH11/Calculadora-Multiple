@@ -1,6 +1,21 @@
-main{
+.main-container{
     display:flex;
     flex-wrap: wrap;
+}
+
+.main-container-cards{
+    display:flex;
+    justify-content: center;
+    width: 95%;
+    border-top: 1px solid white;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.container-cards{
+    max-width: 93rem;
+    padding-top: 2rem;
+    border-top: none;
 }
 
 .contenedor-teoria{

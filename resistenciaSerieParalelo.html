@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/stilosCalculoSerieParalelo/smarponeSerieParalelo.css">
     <link rel="stylesheet" href="css/stilosCalculoSerieParalelo/tabletSerieParalelo.css" media="(min-width: 768px)" />
     <link rel="stylesheet" href="css/stilosCalculoSerieParalelo/labtopSerieParalelo.css" media="(min-width: 1024px)" />
+    <link rel="stylesheet" href="css/stilosCalculoSerieParalelo/especialLaptopSerieParalelo.css" media="(min-width: 1440px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
@@ -27,75 +28,124 @@
     <!--MAIN-->
     
     <main>
-        <section class="contenedor-teoria">
-            <div class="margen">
-                <p class="titulo-seccion">¿cómo calcular la resistencia equivalente en serie?</p>
-                <p class="teoria">Para hallar el valor de la resistencia equivalente conformada por varios resistores en serie solo debe realizar la suma de todos los resistores que conformen la rama en serie.</p>
-                <div class="imagen">
+        <div class="main-container">
+            <section class="contenedor-teoria">
+                <div class="margen">
+                    <p class="titulo-seccion">¿cómo calcular la resistencia equivalente en serie?</p>
+                    <p class="teoria">Para hallar el valor de la resistencia equivalente conformada por varios resistores en serie solo debe realizar la suma de todos los resistores que conformen la rama en serie.</p>
+                    <div class="imagen">
+                    </div>
+                    <h2 class="formula">RE = R1 + R2 + R3</h2>
+                    <p class="titulo-seccion">¿cómo calcular la resistencia equivalente en paralelo?</p>
+                    <div class="formula2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYf59hOCBMzbGuNN2aZh4dJP-CqcPfGq3bNg&usqp=CAU" alt="formula">
+                    </div>
+                    <P class="teoria">Para caclular el valor de la resistencia equivalente formada por un conjunto de resistores en pararalo debemos aplicar la siguiete formula</P>
+                    <div class="formula2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqh0nIFHNU8avC4xSQ6XUrQReM6dX_DCUIg&usqp=CAU" alt="formula">
+                    </div>
+                    <p class="teoria">El resitor equivalente en paralelo se define como el inverso de la suma de los inversos.</p>
                 </div>
-                <h2 class="formula">RE = R1 + R2 + R3</h2>
-                <p class="titulo-seccion">¿cómo calcular la resistencia equivalente en paralelo?</p>
-                <div class="formula2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYf59hOCBMzbGuNN2aZh4dJP-CqcPfGq3bNg&usqp=CAU" alt="formula">
+            </section>
+            <section class="contenedor-calculadora">
+                <div class="contenedor-titulo-calculadora">
+                    <P>Calculadora de resistencia equivalente</P>
                 </div>
-                <P class="teoria">Para caclular el valor de la resistencia equivalente formada por un conjunto de resistores en pararalo debemos aplicar la siguiete formula</P>
-                <div class="formula2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqh0nIFHNU8avC4xSQ6XUrQReM6dX_DCUIg&usqp=CAU" alt="formula">
-                </div>
-                <p class="teoria">El resitor equivalente en paralelo se define como el inverso de la suma de los inversos.</p>
-            </div>
-        </section>
-        <section class="contenedor-calculadora">
-            <div class="contenedor-titulo-calculadora">
-                <P>Calculadora de resistencia equivalente</P>
-            </div>
-            <div class="seccion-calculadora">
-                <form action="" class="contenedorCalculo">
-                    <div class="selectBox">
-                        <div class="select" id="select5"> <!--Este bloque va cambiando-->
-                            <div class="contenido-select">
-                                <h1 class="titulo">Selecciona una opción</h1>
-                                <p class="descripcion">Selecciona una opción.</p>
+                <div class="seccion-calculadora">
+                    <form action="" class="contenedorCalculo">
+                        <div class="selectBox">
+                            <div class="select" id="select5"> <!--Este bloque va cambiando-->
+                                <div class="contenido-select">
+                                    <h1 class="titulo">Selecciona una opción</h1>
+                                    <p class="descripcion">Selecciona una opción.</p>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
                             </div>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                        <div class="opciones" id="opciones5">
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYP_inTIOuzLGnBxZ9vcUFsay7c5P6A_ygw&usqp=CAU" alt="color negro">
-                                    <div>
-                                     <h2 class="titulo">En serie</h2>
-                                     <p class="descripcion">S</p>
+                            <div class="opciones" id="opciones5">
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYP_inTIOuzLGnBxZ9vcUFsay7c5P6A_ygw&usqp=CAU" alt="color negro">
+                                        <div>
+                                         <h2 class="titulo">En serie</h2>
+                                         <p class="descripcion">S</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#" class="opcion">
-                                <div class="contenido-opcion">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zgxc6cM18yx5FtccKMRXe43LjGNIODJ3rQ&usqp=CAU" alt="color negro">
-                                    <div>
-                                     <h2 class="titulo">En Paralelo</h2>
-                                     <p class="descripcion">P</p>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zgxc6cM18yx5FtccKMRXe43LjGNIODJ3rQ&usqp=CAU" alt="color negro">
+                                        <div>
+                                         <h2 class="titulo">En Paralelo</h2>
+                                         <p class="descripcion">P</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <input type = "hidden" name = "inputOpcion" id = "inputOpcion" value = "" />
-                    <div class="seccion-calculo">
-                        <p class = "guia">ingrese los valores de la resistencias separados por una coma ","</p>
-                        <div class="input-valores">
-                            <input type="text" placeholder="   100, 2000, 500000, 320" class="entrada" id="inputSerieParalelo">
+                        <input type = "hidden" name = "inputOpcion" id = "inputOpcion" value = "" />
+                        <div class="seccion-calculo">
+                            <p class = "guia">ingrese los valores de la resistencias separados por una coma ","</p>
+                            <div class="input-valores">
+                                <input type="text" placeholder="   100, 2000, 500000, 320" class="entrada" id="inputSerieParalelo">
+                            </div>
                         </div>
+                    </form>
+                    <div class="contenedor-boton">
+                        <button class = "boton-calcular" type="button" id = "botonCalcular">Calcular</button>
                     </div>
-                </form>
-                <div class="contenedor-boton">
-                    <button class = "boton-calcular" type="button" id = "botonCalcular">Calcular</button>
                 </div>
+                <div class = "contenedorResultado" id = "contenedorResultado">
+                    <p class = "respuestaDelCalculo">El valor de la resistencia es: <br></p>
+                </div>
+            </section>
+    
+                 <!--SECCION CARDS-->
+    
+            <div class="main-container-cards">
+                <section class="container-cards">
+                    <a href="/codigoDeColores.html">
+                        <div class="card card1">
+                            <h2>Calculadora codigo de colores</h2>
+                            <p>Calcula el valor de la resistencia por medio del codigo de colores.</p>
+                            <figure>
+                                <img src="/recurso/icono-resistencia1.png" alt="Imagen de una resistencia">
+                            </figure>
+                        </div>
+                    </a>
+                    <a href="/resistenciaSerieParalelo.html">
+                        <div class="card card2">
+                            <h2>Calculadora resistencia equivalente</h2>
+                            <p>Calcula la resistencia equivalente en serie o en paralelo.</p>
+                            <figure>
+                                <span class="Resistencia1"></span>
+                                <span class="Resistencia2"></span>
+                                <span class="Resistencia3"></span>
+                            </figure>
+                        </div>
+                    </a>
+                    <a href="/capacitoresSerieParalelo.html">
+                        <div class="card card3">
+                            <h2>Calculadora condensador equivalente</h2>
+                            <p>Calcula el condensandor equivalente en serie o en paralelo.</p>
+                            <figure>
+                                <span class="Condensador1"></span>
+                                <span class="Condensador2"></span>
+                                <span class="Condensador3"></span>
+                            </figure>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card4">
+                            <h2>Calculadora resistencia para un led</h2>
+                            <p>Calcula la resistencia apropiada para un diodo led en serie.</p>
+                            <figure>
+                                <img src="/recurso/icons8-led-64.png" alt="Imagen de una resistencia">
+                            </figure>
+                        </div>
+                    </a>
+                </section>
             </div>
-            <div class = "contenedorResultado" id = "contenedorResultado">
-                <p class = "respuestaDelCalculo">El valor de la resistencia es: <br></p>
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="contenedor-creditos">
