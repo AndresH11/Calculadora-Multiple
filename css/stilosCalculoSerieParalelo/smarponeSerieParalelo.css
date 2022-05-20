@@ -26,7 +26,7 @@ header{
     width: 100%;
     height: 100px;
     margin-bottom: 2rem;
-    background-color: #010036;;
+    background-color: #ffffff;
     display: grid;
     grid-template-rows: 2fr 1fr;
     justify-items: center;
@@ -37,20 +37,20 @@ header h1{
     font-size: 2.8rem;
     letter-spacing: 1px;
     font-weight: bold;
-    color: wheat;
+    color: #57606f;
 }
 
 header nav{
     width: 100%;
     height: 100%;
-    background-color: #002064;
+    background-color: #dfe4ea;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header p{
-    color: white;
+    color: #57606f;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -58,7 +58,7 @@ header p{
 /*FIN DE ESTILOS PARA EL HEADER*/
 
 body{
-    background-image: linear-gradient(to right top, #002064,#001e67,#001d6a,#001a6d,#001870,#00197c,#001a89,#001a95,#001faf,#0024c9,#0028e4,#002dff);
+    background-color: #f1f2f6;
 }
 
  /*COMIENZO SECCION TEORIA*/
@@ -70,7 +70,7 @@ body{
     padding-top: 2.69rem;
     margin-bottom: 3.8rem;
     letter-spacing: 0.1rem;
-    background: rgb(246 244 244 / 60%);
+    background: #2f35420a;
     border-radius: 0.5rem;
 }
 
@@ -142,7 +142,7 @@ body{
     max-width: 76.8rem;
     margin: 0 auto;
     padding-top: 1.3rem;
-    background: rgb(39 255 0 / 44%);
+    background: #ff6348;
     border-radius: 0.5rem;
 }
 
@@ -329,7 +329,7 @@ body{
     letter-spacing: .2rem;
     border: none;
     border-radius: 0.5rem;
-    background: rgb(38 191 0);
+    background: #747d8c;
     box-shadow: 2px 3px 10px rgba(9, 9, 9, 0.8);
 }
 
@@ -362,7 +362,7 @@ body{
     gap: 1rem;
     justify-content:center;
     grid-template-columns: repeat(auto-fill,minmax(25rem,30rem));
-    border-top: 1px solid white;
+    border-top: 4px solid rgb(164, 176, 190);
     margin-top: 2rem;
     padding-top:2rem;
 }
@@ -404,19 +404,19 @@ body{
 }
 
 .container-cards .card1{
-    background-color: #318CE7;
+    background-color: #ffa502;
 }
 
 .container-cards .card2{
-    background-color: #31E743;
+    background-color: #ff6348;
 }
 
 .container-cards .card3{
-    background-color: #E80404;
+    background-color: #ff4757;
 }
 
 .container-cards .card4{
-    background-color: #282626;
+    background-color: #2f3542;
 }
 
 
@@ -509,11 +509,10 @@ footer{
     width: 100%;
     height: 25.9rem;
     margin-top: 2rem;
-    border-top: 3rem solid #002064;
+    border-top: 3rem solid #a4b0be;
 }
-
 .contenedor-creditos{
-    background: #010036;
+    background: #2f3542;
     display: grid;
     grid-template-rows: 20rem 5.9rem;
     grid-template-areas: 
@@ -523,7 +522,7 @@ footer{
 }
 
 .contenedor-sitiosWeb{
-    color: rgba(255, 255, 255, 0.54);
+    color: #f1f2f6;
     display: flex;
     justify-content: center;
     padding-top: 4.4rem
@@ -537,7 +536,7 @@ footer{
 }
 
 .contenedor-sitiosWeb .links a{
-    color: rgba(255, 255, 255, 0.54);
+    color: #f1f2f6;
 }
 .contenedor-creditos .titulo-credito{
     font-size: 1.5rem;
@@ -547,7 +546,7 @@ footer{
 }
 
 .contenedor-creador{
-    color: rgba(255, 255, 255, 0.54);
+    color: #f1f2f6;
     display: flex;
     justify-content: center;
     padding-top: 4.4rem;
@@ -557,7 +556,7 @@ footer{
 .contenedor-copyright{
     width: 90%;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.54);
+    color: #f1f2f6;
     grid-column-start: 1;
     grid-column-end: 3;
     position: relative;
