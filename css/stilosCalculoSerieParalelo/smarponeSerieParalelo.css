@@ -419,6 +419,9 @@ body{
     background-color: #2f3542;
 }
 
+.container-cards .card5{
+    background-color: #259181;
+}
 
 /*DANDO POSICION A LAS RESISTENCIAS DE LA CARD 2*/
 
@@ -496,6 +499,10 @@ body{
 /*FIN DE LOS ESTILOS DE POSICIONAMIENTO DEL CONDENSADOR DE LA CARD 3*/
 
 .container-cards .card4 img{
+    width: 100%;
+}
+
+.container-cards .card5 img{
     width: 100%;
 }
 

@@ -1,0 +1,301 @@
+/*APLICANDO ESTILOS PRINCIPALES*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+i{
+    margin-right: 1.1rem;
+    font-size: 2.3rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*COMIENZO DE ESTILOS PARA HEADER*/
+
+header{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #57606f;
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    background-color: #dfe4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p{
+    color: #57606f;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*FIN DE ESTILOS PARA EL HEADER*/
+
+/*COMIENZO DE ESTILOS PARA EL BODY*/
+
+body{
+    background-color: #f1f2f6;
+}
+
+.main-container{
+    width: 90%;
+    max-width: 38rem;
+    min-width: 28rem;
+    height: 40rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    background-color: #ffffff;
+    border: solid 1px #F8CE3B;
+    text-align: center;
+}
+
+.main-container h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+.main-container-img{
+    width: 6.1rem;
+    height: 6.3rem;
+    margin: 0 auto;
+}
+
+.main-container-img img{
+    width: 100%;
+}
+
+.main-container .to{
+    font-size: 1.8rem;
+    margin: 1rem 0rem;
+}
+
+.main-container-currency{
+    width: 21.9rem;
+    height: 5rem;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #F8CE3B;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/*ESTILOS PARA EL SELECTOR DE DIVISA*/
+.currency-from-change-select{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currency-from-change-select-img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.currency-from-change-select-img img{
+    width: 100%;
+}
+
+.currency-from-change-select .titulo{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main-container-currency-opciones{
+    background-color: white;
+    border: 1px solid #F8CE3B;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    max-height: 16rem;
+    overflow-y:scroll;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-container-currency-opciones .opcion .contenido-opcion{
+    width: 90%;
+    height: 4rem;
+    margin:0.5rem auto;
+    border: 1px solid #e8ebbc;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.main-container-input-amount{
+    height: 2.3rem;
+    margin-top:1.2rem;
+    background-color: #ABFFFA;
+    border:#ABFFFA;
+    text-align: center;
+}
+
+.main-container-result{
+    width: 19.5rem;
+    height: 2.5rem;
+    margin: 1.2rem auto;
+    padding-top: 0.5rem;
+    background-color: #BEFFB9;
+    border: #BEFFB9;
+    font-size: 1.6rem;
+}
+
+.buttonContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer .buttonCalcDivisa{
+    width: 9.2rem;
+    height: 3.6rem;
+    color:white;
+    font-weight: bold;
+    background-color: #FFB547;
+    font-size: 1.6rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer .buttonCalcDivisa:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+
+.intercambioFecha{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.intercambioFecha .intercambio{
+    display: flex;
+    cursor:pointer;
+}
+
+.logoIntercambio{
+    width: 1.5rem;
+    height: 1rem;
+    background-image: url('/recurso/icons8-arrow-32.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*FIN DE ESTILOS PARA EL SELECTOR DE MONEDAS*/
+
+/*FIN DE ESTILOS PARA EL BODY*/
+
+/*COMIENZO DE LOS ESTILOS PARA EL FOOTER*/
+
+footer{
+    width: 100%;
+    height: 25.9rem;
+    margin-top: 2rem;
+    border-top: 3rem solid #a4b0be;
+}
+.contenedor-creditos{
+    background: #2f3542;
+    display: grid;
+    grid-template-rows: 20rem 5.9rem;
+    grid-template-areas: 
+    "1"
+    "2"
+    "copyright";    
+}
+
+.contenedor-sitiosWeb{
+    color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 4.4rem
+}
+
+.contenedor-sitiosWeb .links{
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 2.7rem;
+    letter-spacing: 0.2rem;
+}
+
+.contenedor-sitiosWeb .links a{
+    color: #f1f2f6;
+}
+.contenedor-creditos .titulo-credito{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.contenedor-creador{
+    color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 4.4rem;
+    
+}
+
+.contenedor-copyright{
+    width: 90%;
+    margin: 0 auto;
+    color: #f1f2f6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+}
+
+.icono-copyright{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0.5rem;
+    left: calc(50% - 10rem);
+}
+
+.contenedor-copyright p{
+    width: 18rem;
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    font-weight: bold;
+    position: absolute;
+    left: calc(50% - 9rem);
+}
+
+/*FIN DE LOS ESTILOS PARA EL FOOTER*/
+
+/*ESCONDER CAMPOS*/
+
+.inactive{
+    display:none;
+}

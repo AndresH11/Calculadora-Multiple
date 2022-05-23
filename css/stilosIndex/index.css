@@ -122,6 +122,9 @@ body{
     background-color: #2f3542;
 }
 
+.container-cards .card5{
+    background-color: #259181;
+}
 
 /*DANDO POSICION A LAS RESISTENCIAS DE LA CARD 2*/
 
@@ -202,6 +205,9 @@ body{
     width: 100%;
 }
 
+.container-cards .card5 img{
+    width: 100%;
+}
 /*FIN DE LOS ESTILOS PARA LAS CARDS*/
 
 /*FIN DE LOS ESTILOS PARA EL MAIN*/

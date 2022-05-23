@@ -12,8 +12,8 @@ document.querySelectorAll("#opciones6 > .opcion").forEach((opcion)=>{
     opcion.addEventListener("click",(e)=>{
         e.preventDefault();
         contenidoSelect6.innerHTML = e.currentTarget.innerHTML;
-        select5.classList.toggle("active");
-        opciones5.classList.toggle("active");
+        select6.classList.toggle("active");
+        opciones6.classList.toggle("active");
         inputOpcion.value = e.currentTarget.querySelector(".descripcion").textContent;
     });
 });
